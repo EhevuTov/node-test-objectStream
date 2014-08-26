@@ -1,0 +1,30 @@
+{
+  "name": "node-test-objectStream",
+  "version": "0.0.0",
+  "description": "test of Node stream object mode",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+		"start":"node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EhevuTov/node-test-objectStream.git"
+  },
+  "keywords": [
+    "node",
+    "object",
+    "stream",
+		"mode"
+  ],
+  "author": "James Gosnell",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/EhevuTov/node-test-objectStream/issues"
+  },
+  "devDependencies": {
+    "tap": "~0.4.4"
+  },
+  "dependencies": {
+  }
+}
