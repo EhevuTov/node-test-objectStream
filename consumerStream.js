@@ -1,7 +1,7 @@
+// our writeable stream that consumes objects
 var stream = require('stream');
 var util = require('util');
 
-// our writeable stream that consumes objects
 function consumeStream (options) {
 	if (!options) {
 		options = {};
@@ -10,8 +10,11 @@ function consumeStream (options) {
 	stream.Writable.call(this, options);
 }
 util.inherits(consumeStream, stream.Writable);
+
 consumeStream.prototype._write = function (chunk, encoding, done) {
-	console.log(chunk);
+	// chunk.number gets incremented
+	++chunk.number;
+	console.dir(chunk);
 	done();
 };
 module.exports = consumeStream;

@@ -1,3 +1,4 @@
+// produces streamable objects of numbers
 var util = require('util');
 var Readable = require('stream').Readable;
 util.inherits(produceStream, Readable);
@@ -14,6 +15,7 @@ function produceStream(options) {
 
 module.exports = produceStream;
 
+// produces streamable objects of numbers
 produceStream.prototype._read = function() {
 
 	if(this._i < 10) {
